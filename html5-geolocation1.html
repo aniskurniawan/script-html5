@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="lokasi">Klik untuk melihat informasi koordinat:</p>
+<button onclick="getLocation()">Cari Lokasi</button>
+<script>
+function getLocation()
+  {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  }
+function showPosition(posisi)
+  {
+  document.getElementById("lokasi").innerHTML="Latitude: " + posisi.coords.latitude + 
+  "<br>Longitude: " + posisi.coords.longitude;	
+  }
+</script>
+</body>
+</html>
+

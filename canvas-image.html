@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="kanvasku" width="200" height="300" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+var c=document.getElementById("kanvasku");
+var ctx=c.getContext("2d");
+var img=new Image();
+img.onload = function(){
+ctx.drawImage(img,0,0);
+};
+img.src="sampul.jpg";
+</script>
+</body>
+</html>
+
